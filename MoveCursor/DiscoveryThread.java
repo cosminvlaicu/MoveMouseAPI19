@@ -137,7 +137,6 @@ public class DiscoveryThread implements Runnable{
             java.util.logging.Logger.getLogger(DiscoveryThread.class.getName()).log(Level.SEVERE, null, ex);
         } catch(NumberFormatException e){
         }finally{
-            socket.close();
         }
     }
     
