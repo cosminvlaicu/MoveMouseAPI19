@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                             }
 
                             //*** send device screen dimensions to server ***//
-                            sendData = ("DIMENSIONS/"+(int)500+"/"+(int)500).getBytes();
+                            sendData = ("DIMENSIONS/"+(int)xCoord+"/"+(int)yCoord).getBytes();
                             DatagramPacket sendDimensions = new DatagramPacket(sendData,sendData.length,foundInetAddress,8888);
                             c.send(sendDimensions);
 
@@ -160,7 +160,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                         } catch (Exception e) {
                             e.printStackTrace();
                         }finally{
-                            c.close();
                         }
                     }
                 }.start();
@@ -489,6 +488,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 SensorManager.SENSOR_DELAY_NORMAL, SensorManager.SENSOR_DELAY_UI);
         mSensorManager.registerListener(this, magnetometer,
                 SensorManager.SENSOR_DELAY_NORMAL, SensorManager.SENSOR_DELAY_UI);
+        discoverServer("RESPONSE");
     }
     @Override
     public void onSensorChanged(SensorEvent event) {
