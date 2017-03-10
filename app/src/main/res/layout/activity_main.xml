@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cosminvlaicu.movemouseapi19.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:id="@+id/ll1"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Text"
+            android:ems="10"
+            android:id="@+id/editText" />
+
+        <Button
+            android:id="@+id/click_"
+            android:layout_width="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:text="Click"
+            android:onClick="click"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/ll2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/youtube_"
+            android:background="@drawable/ic_youtube"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:onClick="youtube"/>
+
+        <Button
+            android:id="@+id/google_"
+            android:background="@drawable/ic_google"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:onClick="google"/>
+
+        <Button
+            android:id="@+id/link_"
+            android:layout_width="50dp"
+            android:background="@drawable/ic_link"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text=""
+            android:onClick="link"/>
+
+        <Button
+            android:id="@+id/type_"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Type"
+            android:onClick="sendText"/>
+
+        <Button
+            android:id="@+id/enter_"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:onClick="enter"/>
+
+        <Button
+            android:id="@+id/backspace_"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backspace"
+            android:onClick="backspace"/>
+
+        <Button
+            android:id="@+id/scrollUp_"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ic_up"
+            android:layout_marginLeft="70dp"
+            android:text=""
+            android:onClick="scrollUp"/>
+
+        <Button
+            android:id="@+id/scrollDown_"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_down"
+            android:layout_marginLeft="70dp"
+            android:text=""
+            android:onClick="scrollDown"/>
+
+    </LinearLayout>
+
+</LinearLayout>
